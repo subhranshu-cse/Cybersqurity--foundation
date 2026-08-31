@@ -135,3 +135,185 @@ All People Seem To Need Data Processing
 
 **TCP/IP:**  
 Application → Transport → Internet → Network Access
+
+
+# 📘 Networking Day 4 — Network Devices
+
+## 1. What are Network Devices?
+
+Network devices are hardware devices used to connect computers and other devices so they can communicate and share data.
+
+Examples:
+- Hub
+- Switch
+- Router
+- Modem
+- Access Point
+- Repeater
+- Bridge
+- Firewall
+
+---
+
+## 2. Hub
+
+A Hub connects multiple devices in a network.
+
+### How it works:
+When a hub receives data, it sends the data to ALL connected devices.
+
+Example:
+
+PC1 → Hub → PC2
+          ↓
+        PC3
+          ↓
+        PC4
+
+⚠️ Problem:
+- Sends data to everyone
+- More network traffic
+- Less secure
+- Works mainly at OSI Layer 1 (Physical Layer)
+
+---
+
+## 3. Switch
+
+A Switch connects devices in a LAN.
+
+Unlike a hub, a switch sends data only to the correct destination device.
+
+Example:
+
+PC1 → Switch → PC2
+               ↓
+              PC3
+
+If PC1 wants to communicate with PC2, the switch forwards the frame to PC2.
+
+### Important:
+- Uses MAC Address
+- Works mainly at OSI Layer 2 (Data Link Layer)
+- Reduces unnecessary traffic
+- More efficient than a Hub
+
+---
+
+## 4. Router
+
+A Router connects different networks.
+
+Example:
+
+Computer Network → Router → Internet
+
+A router uses IP addresses to decide where packets should go.
+
+### Important:
+- Uses IP Address
+- Works mainly at OSI Layer 3 (Network Layer)
+- Connects different networks
+- Can provide routing and NAT
+
+---
+
+## 5. Modem
+
+Modem stands for:
+
+Modulator + Demodulator
+
+It converts signals so that devices can communicate with an Internet Service Provider (ISP).
+
+Simple flow:
+
+Home Network → Modem → ISP → Internet
+
+---
+
+## 6. Access Point (AP)
+
+An Access Point allows wireless devices to connect to a wired network using Wi-Fi.
+
+Example:
+
+Laptop ))))
+          ↓
+       Access Point
+          ↓
+       Switch/Router
+          ↓
+       Internet
+
+Used in:
+- Offices
+- Colleges
+- Homes
+- Hotels
+
+---
+
+## 7. Repeater
+
+A Repeater receives a weak signal and regenerates it to extend the network range.
+
+Example:
+
+Router →→→ Weak Signal → Repeater →→→ Stronger Signal
+
+### Purpose:
+To increase network coverage.
+
+---
+
+## 8. Bridge
+
+A Bridge connects two network segments and helps control traffic between them.
+
+Example:
+
+LAN 1 → Bridge → LAN 2
+
+A bridge works mainly at OSI Layer 2.
+
+---
+
+## 9. Firewall
+
+A Firewall controls incoming and outgoing network traffic based on security rules.
+
+Example:
+
+Internet → Firewall → Computer
+
+It can:
+✅ Allow trusted traffic
+❌ Block unauthorized traffic
+
+### Practical Example:
+
+If a firewall blocks TCP port 23, Telnet traffic may be prevented.
+
+Firewalls are very important in Cyber Security and SOC environments.
+
+---
+
+# 🔥 Hub vs Switch vs Router
+
+| Device | Main Address | Main Function | OSI Layer |
+|--------|--------------|---------------|-----------|
+| Hub | None | Sends data to all ports | Layer 1 |
+| Switch | MAC Address | Sends data to destination device | Layer 2 |
+| Router | IP Address | Connects different networks | Layer 3 |
+
+---
+
+# 🛠️ Practical Commands
+
+### Windows
+
+Check network information:
+
+```bash
+ipconfig
