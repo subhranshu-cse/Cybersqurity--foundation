@@ -1,0 +1,9 @@
+def jod(a,b):return a+b
+def guna(a,b):return a*b
+def cube (n):return n*n*n
+def avg (a,b,c):return(a+b+c)/3
+print("---MATH UTILITY MODULE----")
+print("jod:",jod(10,20))
+print("guna:",guna(10,20))
+print("Average:",average(10,20,30))
+print("cube:",cube(3))
