@@ -1,0 +1,9 @@
+import time
+timestamp=time.strftime("%H:%S:%M")
+print(timestamp)
+timestamp=time.strftime("%d")
+print(timestamp)
+timestamp=time.strftime("%m")
+print(timestamp)
+timestamp=time.strftime("%Y")
+print(timestamp)
