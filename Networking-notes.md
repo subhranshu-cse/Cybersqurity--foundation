@@ -317,3 +317,88 @@ Check network information:
 
 ```bash
 ipconfig
+
+
+
+
+Day 5: IP Address vs MAC Address
+
+1. What is an IP Address?
+
+An IP (Internet Protocol) address is a logical address assigned to a device on a network.
+
+Purpose: It helps identify a device's network location and enables communication between networks.
+
+Example: "192.168.1.10"
+
+Types:
+
+- IPv4
+- IPv6
+
+2. What is a MAC Address?
+
+A MAC (Media Access Control) address is a hardware address associated with a network interface.
+
+Purpose: It identifies a network interface for communication within a local network.
+
+Example: "A4:5E:60:C2:10:9B"
+
+3. Difference Between IP Address and MAC Address
+
+IP Address| MAC Address
+Logical address| Hardware address
+Works at the Network Layer (Layer 3)| Works at the Data Link Layer (Layer 2)
+Can change depending on the network| Usually assigned to the network interface
+Used for routing between networks| Used for delivery within a local network
+IPv4 and IPv6 are common versions| Commonly represented as 48 bits
+
+4. Example
+
+Suppose your laptop connects to a Wi-Fi network.
+
+- IP Address: "192.168.1.10"
+- MAC Address: "A4:5E:60:C2:10:9B"
+
+The IP address helps identify your device's network location, while the MAC address helps deliver Ethernet or Wi-Fi frames over the local network.
+
+Note: These are example addresses, not your actual device addresses.
+
+5. Why Is This Important in Cybersecurity?
+
+Understanding IP and MAC addresses helps with:
+
+- Network troubleshooting
+- Packet analysis using Wireshark
+- Understanding ARP
+- Investigating suspicious network activity
+- Learning network security fundamentals
+
+6. Practical Commands
+
+Windows CMD:
+
+ipconfig
+
+Displays IP configuration.
+
+ipconfig /all
+
+Displays detailed network information, including the physical address.
+
+arp -a
+
+Displays the ARP cache, which maps known IPv4 addresses to MAC addresses on the local network.
+
+7. Quick Revision
+
+- IP Address = Logical address
+- MAC Address = Hardware address associated with a network interface
+- ARP = Resolves IPv4 addresses to MAC addresses on a local network
+- IPv4 = 32 bits
+- IPv6 = 128 bits
+- Traditional MAC address = 48 bits
+
+Conclusion
+
+IP addresses help identify network locations, while MAC addresses help deliver frames across a local network. Both are important foundations for networking and cybersecurity.
