@@ -402,3 +402,61 @@ Displays the ARP cache, which maps known IPv4 addresses to MAC addresses on the 
 Conclusion
 
 IP addresses help identify network locations, while MAC addresses help deliver frames across a local network. Both are important foundations for networking and cybersecurity.
+Day 6: Static IP Address
+
+1. What is a Static IP Address?
+
+A Static IP address is an IP address that remains the same until it is manually changed or its configuration is modified.
+
+It can be configured manually on a device or reserved for that device through DHCP.
+
+2. Example
+
+IP Address: "192.168.1.10"
+
+Subnet Mask: "255.255.255.0"
+
+Default Gateway: "192.168.1.1"
+
+DNS Server: "8.8.8.8"
+
+These are example network settings.
+
+3. Advantages of Static IP
+
+- Provides a consistent IP address.
+- Useful for servers and network devices.
+- Makes remote access easier.
+- Helps configure firewall rules.
+
+4. Disadvantages of Static IP
+
+- Requires proper configuration.
+- Incorrect settings can cause network problems.
+- Duplicate IP addresses can cause conflicts.
+
+5. Uses of Static IP
+
+- Web servers
+- DNS servers
+- Network printers
+- Network infrastructure
+
+6. Practical (Windows CMD)
+
+To check your current IP configuration, use:
+
+ipconfig
+
+To view detailed network information, use:
+
+ipconfig /all
+
+Note: These commands display your current configuration; they do not set a Static IP address.
+
+Conclusion
+
+A Static IP address provides consistent addressing and is useful for servers and network devices that need a predictable IP address.
+
+
+
