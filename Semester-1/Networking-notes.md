@@ -460,3 +460,74 @@ A Static IP address provides consistent addressing and is useful for servers and
 
 
 
+Day 7: Dynamic IP Address
+
+1. What is a Dynamic IP Address?
+
+A Dynamic IP address is an IP address assigned automatically to a device by a DHCP (Dynamic Host Configuration Protocol) server.
+
+The IP address may change over time depending on the network configuration and DHCP lease.
+
+2. Example
+
+IP Address: "192.168.1.15"
+
+Subnet Mask: "255.255.255.0"
+
+Default Gateway: "192.168.1.1"
+
+DNS Server: "8.8.8.8"
+
+These are example network settings assigned to a device.
+
+3. Advantages of Dynamic IP
+
+- Automatically assigns IP addresses.
+- Reduces manual configuration.
+- Makes network management easier.
+- Helps prevent address conflicts when DHCP is configured correctly.
+
+4. Disadvantages of Dynamic IP
+
+- The IP address may change over time.
+- Remote access can be more difficult if an address changes.
+- DHCP problems can prevent devices from receiving valid network settings.
+
+5. Uses of Dynamic IP
+
+- Home Wi-Fi networks
+- Office networks
+- Smartphones
+- Laptops
+- Public Wi-Fi networks
+
+6. Practical (Windows CMD)
+
+To check your current IP configuration:
+
+ipconfig
+
+To view detailed network information:
+
+ipconfig /all
+
+To request an IPv4 address through DHCP:
+
+ipconfig /renew
+
+Note: The "/renew" command requests a renewed DHCP configuration. It does not guarantee that the IP address will change.
+
+7. What is DHCP?
+
+DHCP stands for Dynamic Host Configuration Protocol.
+
+It automatically provides devices with network settings such as:
+
+- IP address
+- Subnet mask
+- Default gateway
+- DNS server
+
+Conclusion
+
+A Dynamic IP address is assigned automatically, usually through DHCP. It simplifies IP address management and is commonly used for laptops, smartphones, and other client devices.
